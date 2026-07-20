@@ -21,7 +21,7 @@ require_once __DIR__ . '/includes/header.php';
 
 <!-- پیام خوش‌آمدگویی -->
 <div class="card">
-    <h3 style="margin-bottom: 15px; color: #2c3e50;">پروژ ملی مهارت</h3>
+    <h3 style="margin-bottom: 15px; color: #2c3e50;">پروژه ملی مهارت</h3>
     <p>
         علی وراثی پروژه نهایی درس مبتنی بر وب
     </p>
