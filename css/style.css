@@ -1,0 +1,412 @@
+/**
+ * ============================================
+ *  فایل استایل اصلی وب‌سایت
+ *  Main Stylesheet
+ * ============================================
+ *
+ *  طراحی ساده و تمیز با پشتیبانی کامل از RTL (راست به چپ)
+ */
+
+/* ============================================
+   بازنشانی و تنظیمات پایه
+   Reset & Base Styles
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    direction: rtl;
+    line-height: 1.8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ============================================
+   کانتینر اصلی
+   Main Container
+   ============================================ */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* ============================================
+   سربرگ و منوی ناوبری
+   Header & Navigation
+   ============================================ */
+
+.header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #ecf0f1;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 0.95em;
+}
+
+.nav-link:hover {
+    background-color: #34495e;
+}
+
+.nav-admin {
+    background-color: #e67e22;
+}
+
+.nav-admin:hover {
+    background-color: #d35400;
+}
+
+.nav-welcome {
+    color: #2ecc71;
+    padding: 8px 12px;
+    font-size: 0.9em;
+}
+
+/* ============================================
+   محتوای اصلی
+   Main Content
+   ============================================ */
+
+.main {
+    flex: 1;
+    padding: 30px 0;
+}
+
+.page-title {
+    font-size: 1.6em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+/* ============================================
+   فرم‌ها
+   Forms
+   ============================================ */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: Tahoma, Arial, sans-serif;
+    direction: rtl;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* ============================================
+   دکمه‌ها
+   Buttons
+   ============================================ */
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: Tahoma, Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-success {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #219a52;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #d68910;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+.btn-small {
+    padding: 5px 12px;
+    font-size: 0.85em;
+}
+
+/* ============================================
+   پیام‌ها
+   Messages (Success / Error)
+   ============================================ */
+
+.message {
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+.message-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* ============================================
+   جدول‌ها
+   Tables
+   ============================================ */
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: right;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* ============================================
+   فرم جستجو
+   Search Form
+   ============================================ */
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.search-form .form-group {
+    margin-bottom: 0;
+    flex: 1;
+    min-width: 150px;
+}
+
+/* ============================================
+   کارت‌ها (برای صفحات خانه و درباره ما)
+   Cards
+   ============================================ */
+
+.card {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+    line-height: 2;
+    color: #555;
+}
+
+/* ============================================
+   فرم ورود و ثبت‌نام (وسط‌چین)
+   Login & Register Forms (Centered)
+   ============================================ */
+
+.auth-form {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form .form-group {
+    margin-bottom: 18px;
+}
+
+.auth-form .btn {
+    width: 100%;
+}
+
+.auth-form .form-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #3498db;
+}
+
+.auth-form .form-link:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   پابرگ
+   Footer
+   ============================================ */
+
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
+
+/* ============================================
+   اقدامات جدول (دکمه‌های عملیات)
+   Table Actions
+   ============================================ */
+
+.actions {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+/* ============================================
+   مدیریت محتوای درباره ما
+   About Management
+   ============================================ */
+
+.about-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+/* ============================================
+   صفحه 404
+   404 Page
+   ============================================ */
+
+.not-found {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.not-found h2 {
+    font-size: 3em;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
